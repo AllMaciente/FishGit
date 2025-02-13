@@ -14,8 +14,8 @@ Atalhos Git para Fish Shell.
 | `gcb <nome>`     | Cria e muda para uma nova branch                  | Combina`git checkout -b <nome>`.                                                                     |
 | `gb`             | Lista todas as branches                           | Atalho para `git branch -a`, mostrando locais e remotas.                                             |
 | `gdf`            | Mostra as diferenças nos arquivos modificados     | Equivalente a `git diff`, útil para revisar mudanças antes do commit.                                |
-| `grs`            | Reseta o último commit (soft)                     | Executa `git reset --soft HEAD~1`, mantendo as mudanças no staging.                                  |
-| `grh`            | Reseta o último commit (hard)                     | Executa `git reset --hard HEAD~1`, descartando todas as mudanças.                                    |
+| `grs`            | Reseta o último commit (soft)                     | Executa `git reset --soft HEAD^`, mantendo as mudanças no staging.                                  |
+| `grh`            | Reseta o último commit (hard)                     | Executa `git reset --hard HEAD^`, descartando todas as mudanças.                                    |
 | `gl`             | Exibe um log compacto dos commits                 | Atalho para `git log --oneline --graph --decorate --all`.                                            |
 | `gcl <url>`      | Clona um repositório do GitHub/GitLab/etc.        | Atalho para `git clone <url>`.                                                                       |
 | `gmr <branch>`   | Faz merge da branch especificada na atual         | Equivalente a `git merge <branch>`.                                                                  |
