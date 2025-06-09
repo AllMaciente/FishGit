@@ -22,3 +22,6 @@ Atalhos Git para Fish Shell.
 | `gsta`           | Salva temporariamente as mudanças                 | Atalho para `git stash`, útil para alternar de branch sem perder progresso.                          |
 | `gpop`           | Recupera mudanças salvas no stash                 | Equivalente a `git stash pop`.                                                                       |
 | `grm <arquivo>`  | Remove um arquivo do Git e do sistema de arquivos | Executa `git rm <arquivo>` para remover arquivos rastreados.                                         |
+| `gac "mensagem"`      | Adiciona **todos os arquivos** e faz commit | Executa `git add --all` e depois `git commit -m "mensagem"`                                             |
+| `gac arquivo1 "msg"`  | Adiciona um arquivo específico e commita    | Executa `git add arquivo1` seguido de `git commit -m "msg"`                                             |
+| `gac arq1 arq2 "msg"` | Adiciona múltiplos arquivos e commita       | Adiciona os arquivos listados (todos menos o último argumento) e usa o último como a mensagem do commit |
